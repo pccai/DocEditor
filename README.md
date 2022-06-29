@@ -6,6 +6,19 @@
 ```bash
 $ pnpm install
 $ npx husky install && chmod 755 .husky/pre-commit
+
+├─┬ css-loader
+│ └── ✕ unmet peer webpack@^5.0.0: found 4.44.2
+├─┬ mini-css-extract-plugin
+│ └── ✕ unmet peer webpack@^5.0.0: found 4.44.2
+└─┬ style-loader
+  └── ✕ unmet peer webpack@^5.0.0: found 4.44.2
+  
+  适当降低3个库的版本就可以run起来：
+  
+  "less-loader": "4.1.0",
+  "mini-css-extract-plugin": "^1.6.2",
+  "style-loader": "^2.0.0",
 ```
 
 ## 类型拓展
